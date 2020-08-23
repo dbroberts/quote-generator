@@ -25,7 +25,7 @@ async function getQuote() {
         }
         quoteText.innerText = data.data.content;
     } catch (error) {
-        //getQuote();
+        getQuote();
         console.log('whoops, no quote', error);
     }
 }
